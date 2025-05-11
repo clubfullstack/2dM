@@ -1,73 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dois de Muitos - Comunidade</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dois de Muitos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header img {
+      height: 40px;
+      vertical-align: middle;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+
+    .icon-box {
+      width: 120px;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      transition: transform 0.2s ease;
+    }
+
+    .icon-box:hover {
+      transform: scale(1.05);
+    }
+
+    .icon-box img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1rem;
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+    }
+
+    @media (max-width: 600px) {
+      .icon-box {
+        width: 100px;
+      }
+
+      .icon-box img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="Logo_Dois_d_Muitos.png" alt="Logo Dois de Muitos" class="logo">
-    <h1>Bem-vindos à Comunidade Dois de Muitos</h1>
-    <p>Se você chegou até aqui, é porque acredita no nosso propósito.</p>
+    <img src="Logo_Dois_d_Muitos.png" alt="Logo Dois de Muitos" />
+    <h1>Comunidade Dois de Muitos</h1>
   </header>
 
-  <main class="grid-container">
-    <a href="https://open.spotify.com/show/2ZmtU4Z7EHwBjUiPrTxgAo?si=znlvG3SLTYuwOvGTorXxsQ" class="icon-button">
-      <img src="icons/spotify_xilo.png" alt="Spotify">
-      <span>Spotify</span>
+  <div class="container">
+    <a href="https://open.spotify.com/show/2ZmtU4Z7EHwBjUiPrTxgAo?si=znlvG3SLTYuwOvGTorXxsQ" class="icon-box">
+      <img src="icons/spotify.png" alt="Spotify" />
+      <div>Spotify</div>
     </a>
 
-    <a href="https://instagram.com/doisdemuitos" class="icon-button">
-      <img src="icons/instagram_xilo.png" alt="Instagram">
-      <span>Instagram</span>
+    <a href="https://instagram.com/doisdemuitos" class="icon-box">
+      <img src="icons/instagram.png" alt="Instagram" />
+      <div>Instagram</div>
     </a>
 
-    <a href="#" class="icon-button disabled">
-      <img src="icons/shop_xilo.png" alt="Lojinha">
-      <span>Lojinha (em breve)</span>
+    <a href="#" class="icon-box">
+      <img src="icons/shop.png" alt="Lojinha" />
+      <div>Lojinha</div>
     </a>
 
-    <a href="#" class="icon-button disabled">
-      <img src="icons/match_xilo.png" alt="IA Match">
-      <span>IA de Match (em breve)</span>
+    <a href="#" class="icon-box">
+      <img src="icons/ai.png" alt="IA de Match" />
+      <div>IA de Match</div>
     </a>
 
-    <a href="https://clubfullstack.github.io/2dm.ia/" class="icon-button">
-      <img src="icons/forum_xilo.png" alt="Fórum">
-      <span>Fórum</span>
+    <a href="https://clubfullstack.github.io/2dm.ia/" class="icon-box">
+      <img src="icons/forum.png" alt="Fórum" />
+      <div>Fórum</div>
     </a>
 
-    <a href="https://open.spotify.com/playlist/1cmrbif2z13TN6xZLHr7gf?si=T-79xy9zTKus1POWSG6dXA" class="icon-button">
-      <img src="icons/playlist_xilo.png" alt="Playlist">
-      <span>Playlist</span>
+    <a href="https://open.spotify.com/playlist/1cmrbif2z13TN6xZLHr7gf?si=T-79xy9zTKus1POWSG6dXA" class="icon-box">
+      <img src="icons/playlist.png" alt="Playlist" />
+      <div>Playlist</div>
     </a>
 
-    <a href="https://sites.google.com/alumni.usp.br/teias/inicio" class="icon-button">
-      <img src="icons/teias_xilo.png" alt="Teias">
-      <span>Site TEIAS</span>
+    <a href="https://sites.google.com/alumni.usp.br/teias/inicio" class="icon-box">
+      <img src="icons/site_teias.png" alt="Site TEIAS" />
+      <div>Site TEIAS</div>
     </a>
 
-    <a href="https://sites.google.com/site/treinamentoavatar" class="icon-button">
-      <img src="icons/avatar_xilo.png" alt="Avatar">
-      <span>Site Avatar</span>
+    <a href="https://sites.google.com/site/treinamentoavatar" class="icon-box">
+      <img src="icons/avatar.png" alt="Avatar" />
+      <div>Site Avatar</div>
     </a>
 
-    <a href="https://forms.gle/B7UPj8SynAjQaiP49" class="icon-button">
-      <img src="icons/livro_xilo.png" alt="Livro">
-      <span>Campanha do Livro</span>
+    <a href="https://forms.gle/B7UPj8SynAjQaiP49" class="icon-box">
+      <img src="icons/livro.png" alt="Campanha Livro" />
+      <div>Livro</div>
     </a>
 
-    <a href="#" class="icon-button">
-      <img src="icons/doc_xilo.png" alt="Documentação">
-      <span>Documentação</span>
+    <a href="#" class="icon-box">
+      <img src="icons/documentacao.png" alt="Documentação" />
+      <div>Documentação</div>
     </a>
-  </main>
+  </div>
 
   <footer>
-    <p>📢 Últimas notícias em breve! Entre para o grupo da comunidade:</p>
-    <a href="https://zap.com/doisdemuitos" class="zap-button">Entrar no Grupo Zap</a>
+    <p>📣 Últimas notícias | <a href="https://chat.whatsapp.com/ExemploGrupoZap" style="color: #fff; text-decoration: underline;">Entre no grupo Dois de Muitos</a></p>
   </footer>
 </body>
 </html>
