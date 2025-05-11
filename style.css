@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: white;
+  color: black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.logo {
+  max-height: 100px;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.icon-button {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
+}
+
+.icon-button img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+  filter: grayscale(100%);
+}
+
+.icon-button:hover {
+  transform: scale(1.05);
+}
+
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.zap-button {
+  background-color: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 1rem;
+}
